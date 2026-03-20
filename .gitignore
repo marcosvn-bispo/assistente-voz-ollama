@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.env
+response.mp3
+.ipynb_checkpoints/
