@@ -3,3 +3,5 @@ speechrecognition
 sounddevice
 soundfile
 numpy
+scipy
+pyttsx3
