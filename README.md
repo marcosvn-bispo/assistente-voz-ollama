@@ -17,7 +17,6 @@ O objetivo é demonstrar a integração entre reconhecimento de voz, inteligênc
 * Reconhecimento de voz em português (pt-BR)
 * Integração com modelo LLM via Ollama
 * Respostas em áudio (Text-to-Speech)
-* Execução contínua com loop de interação
 
 ---
 
