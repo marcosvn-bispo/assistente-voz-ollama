@@ -1,4 +1,0 @@
-speechrecognition
-gtts
-requests
-pyaudio
