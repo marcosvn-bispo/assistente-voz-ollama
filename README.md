@@ -60,6 +60,8 @@ cd assistente-voz-ollama
 ### Windows (PowerShell)
 
 ```bash
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
 ### Linux / Mac
