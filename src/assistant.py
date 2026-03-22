@@ -3,19 +3,18 @@ import requests
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3"
 
-def process_command(command):
-    try:
-        response = requests.post(
-            OLLAMA_URL,
-            json={
-                "model": MODEL,
-                "prompt": command,
-                "stream": False
-            }
-        )
 
+def ask_ollama(prompt):
+    payload = {
+        "model": MODEL,
+        "prompt": prompt,
+        "stream": False
+    }
+
+    response = requests.post(OLLAMA_URL, json=payload)
+
+    if response.status_code == 200:
         data = response.json()
-        return data.get("response", "Não consegui responder.")
-    
-    except Exception as e:
-        return f"Erro ao conectar ao Ollama: {e}"
+        return data["response"]
+
+    return "Erro ao consultar o modelo."
